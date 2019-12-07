@@ -1,0 +1,36 @@
+{
+    "data": [
+        {
+            "name": "user John Brown",
+            "age": 18,
+            "sex": 1,
+            "address": "New York No. 1 Lake Park",
+            "date": "2016-10-03"
+        },
+        {
+            "name": "Jim Green",
+            "age": 24,
+            "sex": 0,
+            "address": ["北京","上海","重庆"],
+            "date": "2016-10-01"
+        },
+        {
+            "name": "Joe Black",
+            "age": 30,
+            "sex": 0,
+            "address": {
+                "jingdu": "23.67",
+                "weidu": "12.11"
+            },
+            "date": "2016-10-02"
+        },
+        {
+            "name": "Jon Snow",
+            "age": 26,
+            "sex": 1,
+            "address": "Ottawa No. 2 Lake Park",
+            "date": "2016-10-04"
+        }
+    ],
+    "status": true
+}

@@ -1,0 +1,71 @@
+{
+    "data": [
+        {
+            "title": "根目录",
+            "expand": true,
+            "children": [
+                {
+                    "title": "Linux",
+                    "expand": true,
+                    "path": "linux",
+                    "type": "tree",
+                    "children": [
+                        {
+                            "path": "linux/baseline1",
+                            "title": "baseline1",
+                            "type": "tree",
+                            "expand": true,
+                            "children": [
+                                {
+                                    "path": "linux/baseline1/son1",
+                                    "title": "son1",
+                                    "type": "tree",
+                                    "expand": true
+                                },
+                                {
+                                    "path": "linux/baseline1/son2",
+                                    "title": "son2",
+                                    "type": "tree",
+                                    "expand": true
+                                }
+                            ]
+                        },
+                        {
+                            "path": "linux/baseline2",
+                            "title": "baseline2",
+                            "type": "tree",
+                            "expand": true
+                        },
+                        {
+                            "path": "linux/baseline3",
+                            "title": "baseline3",
+                            "type": "tree",
+                            "expand": true
+                        }
+                    ]
+                },
+                {
+                    "title": "window",
+                    "expand": true,
+                    "path": "window",
+                    "type": "tree",
+                    "children": [
+                        {
+                            "path": "window/baseline1",
+                            "title": "baseline1",
+                            "type": "tree",
+                            "expand": true
+                        },
+                        {
+                            "path": "window/baseline2",
+                            "title": "baseline2",
+                            "type": "tree",
+                            "expand": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "status": true
+}

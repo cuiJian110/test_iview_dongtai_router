@@ -1,0 +1,8 @@
+{
+    "data": [
+        {"name": "menu601", "title": "菜单1-601", "access": 601},
+        {"name": "menu602", "title": "菜单1-602", "access": 602},
+        {"name": "menu603", "title": "菜单1-603", "access": 603}
+    ],
+    "status": true
+}
