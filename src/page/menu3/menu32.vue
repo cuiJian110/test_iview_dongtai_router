@@ -1,3 +1,10 @@
+<!--
+ * @Description: 
+ * @Autor: cuiJian
+ * @Date: 2019-12-10 17:07:58
+ * @LastEditors: cuiJian
+ * @LastEditTime: 2019-12-10 17:36:46
+ -->
 <template>
     <div>
         <input type="text" v-model='name' placeholder="name">
@@ -30,13 +37,14 @@ export default {
                 component: Menu12
             }
             // this.addMenuList(obj)
+            console.log("this.$router=>>>>>>",this.$router);
             console.log(this.$router.options.routes)
             this.$router.options.routes.forEach(item => {
                 if(item.name === 'menu1') {
                     item.children.push(obj)
                 }
             })
-            this.$router.$addRoutes(this.$router.options.routes)
+            this.$router.addRoutes(this.$router.options.routes)
             this.$store.commit('initMenuList')
             console.log(this.$router.options.routes)
             this.name = ''

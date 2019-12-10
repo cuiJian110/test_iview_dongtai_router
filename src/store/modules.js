@@ -1,3 +1,10 @@
+/*
+ * @Description: 
+ * @Autor: cuiJian
+ * @Date: 2019-12-10 17:07:58
+ * @LastEditors: cuiJian
+ * @LastEditTime: 2019-12-10 17:22:07
+ */
 
 import {appRouters} from '../router/router'
 const menu = {
@@ -16,6 +23,7 @@ const menu = {
                 if(menuList.indexOf(item.access) !== -1) {
                     const obj = item
                     obj.children = item.children.filter(item => menuList.indexOf(item.access) !== -1 )
+                    // 数组去重
                     let hash = {}; 
                     obj.children = obj.children.reduce((preVal, curVal) => {
                         hash[curVal.access] ? '' : hash[curVal.access] = true && preVal.push(curVal); 
