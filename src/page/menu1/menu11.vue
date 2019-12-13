@@ -123,10 +123,12 @@ export default {
                 fileName: [
                     { required: true, message: 'The name cannot be empty', trigger: 'blur' }
                 ],
-            }
+            },
+            testArr: ["首页","菜单1-1"]
         }
     },
     created() {
+        this.$emit("getSonVale",this.testArr);
         // this.initData()
     },
     methods: {

@@ -18,9 +18,11 @@
                 <Header :style="{padding: 0}" class="layout-header-bar">
                     <Button @click='handleLoginout'>logout</Button>
                     <Button @click='$router.push({name: "center"})'>个人中心</Button>
+                    面包屑：
+                    <span v-for="item in mianbaoxie" :key="item">{{item}}</span>
                 </Header>
                 <Content :style="{margin: '20px', background: '#fff', minHeight: '260px'}">
-                    <router-view></router-view>
+                    <router-view @getSonVale="handleGetSon"></router-view>
                 </Content>
             </Layout>
         </Layout>
@@ -34,7 +36,8 @@ import {getmenu} from '@/api'
 export default {
     data () {
         return {
-            isCollapsed: false
+            isCollapsed: false,
+            mianbaoxie: [],
         }
     },
     computed: {
@@ -56,6 +59,10 @@ export default {
         
     },
     methods: {
+        handleGetSon(v) {
+            console.log("子页面传过来的值===>>>:",v);
+            this.mianbaoxie = v;
+        },
         ...mapMutations(['initMenuList','changeCode','addMenuList']),
         collapsedSider () {
             this.$refs.side1.toggleCollapse();
